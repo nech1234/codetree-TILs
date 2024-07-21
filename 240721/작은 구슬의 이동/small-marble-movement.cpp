@@ -1,8 +1,8 @@
 #include <iostream>
 using namespace std;
 
-bool inrange(int x, int y, int n1,int n2){
-    return(1<=x&&x<=n1&&1<=y&&y<=n2);
+bool inrange(int x, int y, int n1){
+    return(1<=x&&x<=n1&&1<=y&&y<=n1);
 }
 
 int main() {
@@ -29,7 +29,7 @@ int main() {
     for(int i=0;i<n1;i++){
         int nx = x+dx;
         int ny = y+dy;
-        if(inrange(nx,ny,n1,n2)){
+        if(inrange(nx,ny,n1)){
             x=nx;
             y=ny;
         }
