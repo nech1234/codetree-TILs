@@ -12,11 +12,11 @@ int main() {
     cin >> n1 >> n2 >> x >> y >> dir;
     if(dir == 'U'){
         dy=0;
-        dx=1;
+        dx=-1;
     }
     if(dir == 'D'){
         dy=0;
-        dx=-1;
+        dx=1;
     }
     if(dir == 'R'){
         dy=1;
