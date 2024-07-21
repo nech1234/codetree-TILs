@@ -6,10 +6,10 @@ bool inrange(int x, int y, int n1){
 }
 
 int main() {
-    int n1, n2,x,y;
+    int n,t,x,y;
     char dir;
     int dx,dy;
-    cin >> n1 >> n2 >> x >> y >> dir;
+    cin >> n >> t >> x >> y >> dir;
     if(dir == 'U'){
         dy=0;
         dx=-1;
@@ -19,17 +19,17 @@ int main() {
         dx=1;
     }
     if(dir == 'R'){
-        dy=-1;
-        dx=0;
-    }
-    if(dir == 'L'){
         dy=1;
         dx=0;
     }
-    for(int i=0;i<n1;i++){
+    if(dir == 'L'){
+        dy=-1;
+        dx=0;
+    }
+    for(int i=0;i<t;i++){
         int nx = x+dx;
         int ny = y+dy;
-        if(inrange(nx,ny,n1)){
+        if(inrange(nx,ny,n)){
             x=nx;
             y=ny;
         }
