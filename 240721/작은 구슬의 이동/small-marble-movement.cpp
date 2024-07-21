@@ -19,11 +19,11 @@ int main() {
         dx=1;
     }
     if(dir == 'R'){
-        dy=1;
+        dy=-1;
         dx=0;
     }
     if(dir == 'L'){
-        dy=-1;
+        dy=1;
         dx=0;
     }
     for(int i=0;i<n1;i++){
