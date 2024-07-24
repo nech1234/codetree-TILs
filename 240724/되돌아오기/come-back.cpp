@@ -36,6 +36,6 @@ int main() {
             }
         }
     }
-    cout << count;
+    cout << -1;
     return 0;
 }
