@@ -3,7 +3,7 @@
 using namespace std;
 
 bool inrange(int x, int y, int n, int m) {
-    return(0 <= x && x < m && 0 <= y && y < n);
+    return(0 <= x && x < n && 0 <= y && y < m);
 }
 
 int main() {
