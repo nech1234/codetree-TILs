@@ -1,5 +1,5 @@
 #include <iostream>
-#include<vector>
+
 using namespace std;
 
 bool inrange(int x, int y, int n, int m) {
@@ -9,7 +9,12 @@ bool inrange(int x, int y, int n, int m) {
 int main() {
     int n, m;
     cin >> n >> m;
-    vector<vector<int>> arr(n,vector<int>(m,0));
+    int arr[n][m];
+    for(int i=0;i<n;i++){
+        for(int j=0;j<m;j++){
+            arr[i][j]=0;
+        }
+    }
     int dx[4] = { 0,1,0,-1 };
     int dy[4] = { 1,0,-1,0 };
     int dir_num = 0;
