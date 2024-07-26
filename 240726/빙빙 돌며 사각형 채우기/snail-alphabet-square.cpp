@@ -17,12 +17,13 @@ int main() {
     int x{0},y{0},dir_num{0};
     int dx[4] = {0,1,0,-1};
     int dy[4] = {1,0,-1,0};
+    int c = 65;
     for(int i=0;i<n*m;i++){
-        int c = i + 65;
-        if(c>90){
-            c = c - 26;
-        }
         arr[x][y] = (char)c;
+        c++;
+        if(c>90){
+            c = 65;
+        }
         int nx = x + dx[dir_num];
         int ny = y + dy[dir_num];
         if(inrange(nx,ny,n,m)&&arr[nx][ny]==0){
