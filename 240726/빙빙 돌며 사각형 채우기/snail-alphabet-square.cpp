@@ -18,11 +18,11 @@ int main() {
     int dx[4] = {0,1,0,-1};
     int dy[4] = {1,0,-1,0};
     for(int i=0;i<n*m;i++){
-        char c = i + 65;
-        if(c>'Z'){
+        int c = i + 65;
+        if(c>91){
             c-=26;
         }
-        arr[x][y] = c;
+        arr[x][y] = (char)c;
         int nx = x + dx[dir_num];
         int ny = y + dy[dir_num];
         if(inrange(nx,ny,n,m)&&arr[nx][ny]==0){
