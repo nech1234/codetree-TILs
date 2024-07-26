@@ -19,8 +19,8 @@ int main() {
     int dy[4] = {1,0,-1,0};
     for(int i=0;i<n*m;i++){
         int c = i + 65;
-        if(c>91){
-            c-=26;
+        if(c>90){
+            c = c - 26;
         }
         arr[x][y] = (char)c;
         int nx = x + dx[dir_num];
