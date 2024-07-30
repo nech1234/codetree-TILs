@@ -32,7 +32,7 @@ int main() {
                 continue;
             }
             else{
-                li.erase(it);
+                it = li.erase(it);
             }
         }
     }
