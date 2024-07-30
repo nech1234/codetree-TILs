@@ -28,7 +28,12 @@ int main() {
             li.insert(it,c);
         }
         if(c=='D'){
-            li.erase(it);
+            if(it==li.end()){
+                continue;
+            }
+            else{
+                li.erase(it);
+            }
         }
     }
     for(it = li.begin();it!=li.end();it++){
