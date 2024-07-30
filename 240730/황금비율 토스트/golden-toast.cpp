@@ -17,10 +17,14 @@ int main() {
         char c;
         cin >> c;
         if(c=='L'){
-            it--;
+            if(it != li.begin()){
+                it--;
+            }
         }
         if(c=='R'){
-            it++;
+            if(it != li.end()){
+                it++;
+            }
         }
         if(c=='P'){
             char c;
