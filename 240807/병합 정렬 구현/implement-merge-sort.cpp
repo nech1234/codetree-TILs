@@ -2,14 +2,13 @@
 using namespace std;
 
 #define MAX_N 100000
-
 int n;
 int arr[MAX_N];
 int merged_arr[MAX_N];
 
 void Merge(int low, int mid, int high){
     int i = low, j = mid+1, k = low;
-    while(i<=mid&&j<=high){
+    while(i<=mid && j<=high){
         if(arr[i]<=arr[j]){
             merged_arr[k++] = arr[i++];
         }
@@ -23,14 +22,14 @@ void Merge(int low, int mid, int high){
     while(j<=high){
         merged_arr[k++] = arr[j++];
     }
-    for(int k=low;k<=high;k++){
-        arr[k] = merged_arr[k];
+    for(int i=low;i<=high;i++){
+        arr[i] = merged_arr[i];
     }
 }
 
 void MergeSort(int low, int high){
     if(low<high){
-        int mid = (low + high)/2;
+        int mid = (low+high)/2;
         MergeSort(low,mid);
         MergeSort(mid+1,high);
         Merge(low,mid,high);
