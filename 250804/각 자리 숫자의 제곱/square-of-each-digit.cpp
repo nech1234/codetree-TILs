@@ -4,7 +4,7 @@ using namespace std;
 int N;
 
 int sum(int n){
-    if(n % 10 == 0){
+    if(n / 10 == 0){
         return 0;
     }
     int ten = n/10;
