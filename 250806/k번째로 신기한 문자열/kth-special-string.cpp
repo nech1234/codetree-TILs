@@ -14,7 +14,13 @@ int main() {
     vector<string> arr;
     for (int i = 0; i < n; i++) {
         cin >> str[i];
-        if(str[i].find(t) != -1){
+        bool find = true;
+        for(int j=0;j<t.size();j++){
+            if(t[j] != str[i][j]){
+                find = false;
+            }
+        }
+        if(find){
             arr.push_back(str[i]);
         }
     }
