@@ -20,13 +20,13 @@ int main() {
     sort(people,people+5);
     cout << "name\n";
     for (int i = 0; i < 5; i++) {
-        cout << get<0>(people[i]) << " " <<get<1>(people[i]) << " " << get<2>(people[i]) << "\n";
+        cout << get<0>(people[i]) << " " <<get<1>(people[i]) << " " <<setprecision(1)<< get<2>(people[i]) <<"\n";
     }
     sort(people,people+5,comp);
     cout << "\n";
     cout << "height\n";
     for (int i = 0; i < 5; i++) {
-        cout << get<0>(people[i]) << " " <<get<1>(people[i]) << " " << get<2>(people[i]) << "\n";
+        cout << get<0>(people[i]) << " " <<get<1>(people[i]) << " " <<setprecision(1)<< get<2>(people[i]) << "\n";
     }
     return 0;
 }
