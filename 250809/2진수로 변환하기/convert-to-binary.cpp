@@ -20,6 +20,9 @@ int main() {
         }
         n/=2;
     }
+    if(arr.size() == 0){
+        cout << 0;
+    }
     for(int i=arr.size()-1;i>=0;i--){
         cout << arr[i];
     }
