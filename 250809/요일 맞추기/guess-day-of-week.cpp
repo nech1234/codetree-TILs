@@ -18,12 +18,10 @@ int MonOfDay(int m, int d){
 int main() {
     cin >> m1 >> d1 >> m2 >> d2;
 
-    int total_day = MonOfDay(m2,d2) - MonOfDay(m1,d1) + 1;
-    if(total_day<0){
-        total_day = MonOfDay(m1,d1) - MonOfDay(m2,d2) - 1;
-    }
+    int diff = MonOfDay(m2, d2) - MonOfDay(m1, d1);
+    diff = (diff % 7 + 7) % 7;
 
-    cout << days[total_day%7];
+    cout << days[diff];
 
     return 0;
 }
