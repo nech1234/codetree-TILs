@@ -24,7 +24,7 @@ int main() {
     int endDay = MonOfDay(m2,d2);
     int result = 0;
     for(int i=startDay;i<=endDay;i++){
-        if(days[i%7] == A){
+        if(days[(i-startDay)%7] == A){
             result++;
         }
     }
