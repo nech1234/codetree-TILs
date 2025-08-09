@@ -20,7 +20,7 @@ int main() {
 
     int total_day = MonOfDay(m2,d2) - MonOfDay(m1,d1) + 1;
     if(total_day<0){
-        total_day = MonOfDay(m1,d1) - MonOfDay(m2,d2) + 1;
+        total_day = MonOfDay(m1,d1) - MonOfDay(m2,d2) - 1;
     }
 
     cout << days[total_day%7];
