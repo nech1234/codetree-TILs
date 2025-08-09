@@ -4,7 +4,7 @@ using namespace std;
 
 int m1, d1, m2, d2;
 int arr[13] = {0,31,28,31,30,31,30,31,31,30,31,30,31};
-string days[7] = {"Sun","Mon","Tue","Wed","Thu","Fri","Sat"};
+string days[7] = {"Mon","Tue","Wed","Thu","Fri","Sat","Sun"};
 
 int MonOfDay(int m, int d){
     int result = 0;
